@@ -5,7 +5,7 @@ Repositorio que aloja el contenido de la PEC1 de la asignatura Herramientas HTML
 
 ## Gloryhammer: Introducción 🔨
 
-![gif](img/readme_gif.gif)
+![]((https://github.com/carlosbej2/gloryhammer-html-project/blob/main/src/assets/img/gloryhammer_readme.gif))
 
 **Gloryhammer** es una banda de power metal sinfónico originaria de Escocia. La banda fue fundada por Christopher Bowes, teclista de la banda de pirate metal Alestorm. 
 
