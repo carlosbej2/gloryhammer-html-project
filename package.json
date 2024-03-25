@@ -2,7 +2,7 @@
   "name": "gloryhammer-html-project",
   "version": "1.0.0",
   "description": "Repositorio que aloja el contenido de la PEC1 de la asignatura Herramientas HTML y CSS del Máster Universitario en Desarrollo de sitios y aplicaciones web de la Universitat Oberta de Catalunya (UOC)",
-  "source": "src/index.html",
+  "source": "src/views/index.html",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",

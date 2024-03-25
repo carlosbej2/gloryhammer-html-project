@@ -1,0 +1,109 @@
+/** Fuentes **/
+
+@font-face {
+    font-family: "FiraSansFina";
+    src: url("../assets/fonts/FiraSans-Light.ttf");
+}
+@font-face {
+    font-family: "FiraSansTitulo";
+    src: url("../assets/fonts/FiraSans-Black.ttf");
+}
+@font-face {
+    font-family: "FiraSansMediana";
+    src: url("../assets/fonts/FiraSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: "FiraSansMini";
+    src: url("../assets/fonts/FiraSans-Medium.ttf");
+}
+
+/** Reset CSS **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("../assets/img/hammer_cursor.png"), auto;
+}
+
+/** Página de inicio **/
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+body.home {
+    background-image: url('../assets/img/gloryhammer_background.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+body main {
+    padding-top: 35px;
+}
+
+body ul {
+    list-style: none;
+    padding: 0; /* Eliminar el padding para que no haya espacio adicional */
+}
+
+body ul li {
+    display: inline-block;
+}
+
+body ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+    padding: 10px 20px;
+    font-family: "FiraSansMediana";
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-family: "FiraSansFina";
+}
+
+main p {
+    font-family: "FiraSansFina";
+    font-size: 20px;
+}
+
+
+/** Reglas para el diseño responsive **/
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
