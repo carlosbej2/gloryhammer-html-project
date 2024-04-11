@@ -36,6 +36,17 @@
     width: 100%;
 }
 
+.discography_introduction {
+    font-family: "FiraSansTitulo";
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.discography_introduction h1 {
+    text-align: center;
+}
+
 body.home {
     background-image: url('../assets/img/gloryhammer_background.jpg'); 
     background-repeat: no-repeat;
@@ -50,7 +61,7 @@ body main {
 
 body ul {
     list-style: none;
-    padding: 0; /* Eliminar el padding para que no haya espacio adicional */
+    padding: 0; 
 }
 
 body ul li {
@@ -67,7 +78,6 @@ body ul li a {
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     color: #fff;
@@ -80,9 +90,104 @@ main p {
     font-family: "FiraSansFina";
     font-size: 20px;
 }
-
+.video_footer {
+    font-family: "FiraSansTitulo";
+    margin-top:10px;
+}
+section.aims {
+    font-family: "FiraSansTitulo";
+}
+.aims-content {
+    display: block;
+    margin: 0 auto;
+    padding: -2rem;
+    margin-top: 15px;
+}
+.aims-img .copyright {
+    font-size: 0.65rem;
+    text-align: right;
+}
+.card-content {
+    padding: 15px;
+    font-family: "FiraSansFina";
+}
+.card-content h2 a, .card-content h4 a   {
+    color: var(--main-color);
+    border-bottom: none;
+}
+.card-content h2 a:hover, .card-content h4 a:hover {
+    color: var(--accent-color);
+}
+.card-content h2 {
+    margin-bottom: .5rem;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
 
 /** Reglas para el diseño responsive **/
+
+@media (min-width: 768px) {
+    .grid-blog>article,
+    .grid-videos>article {
+        margin-bottom: 0;
+    }
+    .grid-blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .grid-videos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding-top: 45px;
+    }
+    .grid-blog>article:first-child {
+        grid-column: 1 / span 2;
+    }
+    .grid-videos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    div.aims-content {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+    div.aims-img {
+        width: 30%;
+    }
+    div.aims-text {
+        width: 70%;
+        text-align: justify;
+    }
+}
 
 @media (min-width: 576px) {
     .container {
