@@ -224,6 +224,42 @@ h4 a{
     aside section:last-of-type ul li {
         display: inline-block;
     }
+
+    .presentation {
+        text-align: justify;
+        margin: 50px auto;
+        max-width: 800px;
+    }
+    
+    .presentation h2 {
+        font-family: "FiraSansTitulo", sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .presentation p {
+        font-family: "FiraSansFina", sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    .presentation ul {
+        margin-bottom: 20px;
+    }
+    
+    .presentation ul li {
+        font-family: "FiraSansFina", sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+    
+    .presentation img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
