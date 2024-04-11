@@ -112,11 +112,7 @@ section.aims {
     font-family: "FiraSansFina";
 }
 .card-content h2 a, .card-content h4 a   {
-    color: var(--main-color);
     border-bottom: none;
-}
-.card-content h2 a:hover, .card-content h4 a:hover {
-    color: var(--accent-color);
 }
 .card-content h2 {
     margin-bottom: .5rem;
@@ -131,14 +127,59 @@ section.aims {
     padding-left: 1rem;
 }
 
+.disc-post {
+    padding: 1rem;
+}
+.disc-post header {
+    padding: 0.7rem;
+}
+.disc-post header a {
+    border-bottom: none;
+}
+.disc-post h1 {
+    line-height: 1.2;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+.disc-post h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.disc-post .intro {
+    margin: 3rem ;
+    margin-top: -1rem;
+    text-align: justify;
+    font-size: 1.6rem;
+}
+
+ol {
+    list-style: disc;
+    font-family: "FiraSansFina";
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+h4 a{
+    font-family: "FiraSansFina";
+    color: #ffff;
+}
+
+.disc_list {
+    font-family: "FiraSansFina";
+    text-align: center;
+    padding: 0;
+}
+
 /** Reglas para el diseño responsive **/
 
 @media (min-width: 768px) {
-    .grid-blog>article,
+    .grid-disc>article,
     .grid-videos>article {
         margin-bottom: 0;
     }
-    .grid-blog {
+    .grid-disc {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -151,13 +192,48 @@ section.aims {
 }
 
 @media (min-width: 1200px) {
-    .grid-blog {
+    .intro {
+        font-size: 1.6rem;
+    }
+    blockquote {
+        margin-left: 3rem;
+        padding-left: 2rem;
+    }
+    blockquote p {
+        font-size: 1.6rem;
+    }
+    .grid-disc-post {
+        display: grid;
+        grid-template-columns: 65% auto;
+        gap: 4rem;
+    }
+    .other-discs {
+        margin-top: 5px;
+        display: block;
+    }
+    aside {
+        margin-left: -5rem;
+    }
+    aside section:first-of-type {
+        margin-top: 0;
+        
+    }
+    aside section:last-of-type ul {
+        display: block;
+    }
+    aside section:last-of-type ul li {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-disc {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding-top: 45px;
     }
-    .grid-blog>article:first-child {
+    .grid-disc>article:first-child {
         grid-column: 1 / span 2;
     }
     .grid-videos {
