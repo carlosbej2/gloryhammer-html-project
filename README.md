@@ -23,7 +23,6 @@ La banda se caracteriza por sus letras épicas y fantasiosas, que narran la hist
 
 - Tales from the Kingdom of Fife (2013)
 - Space 1992: Rise of the Chaos Wizards (2015)
-- Gloryhammer (2019)
 - Legends From Beyond The Galactic Terrorvortex (2019)
 - Return to the Kingdom Of Fife (2023)
 
