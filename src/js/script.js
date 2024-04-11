@@ -16,4 +16,3 @@ function stopLogoAnimation(element) {
     element.style.transition = 'transform 0.5s ease-in-out'; // Establece una transición suave para la animación
     element.style.transform = 'scale(1)'; // Devuelve la imagen a su tamaño original cuando el cursor se retira
 }
-
