@@ -170,6 +170,8 @@ h4 a{
     font-family: "FiraSansFina";
     text-align: center;
     padding: 0;
+    display: inline-block;
+    font-size: 22px;
 }
 
 /** Reglas para el diseño responsive **/
