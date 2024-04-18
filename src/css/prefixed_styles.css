@@ -22,7 +22,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     cursor: url("../assets/img/hammer_cursor.png"), auto;
 }
 
@@ -294,8 +295,12 @@ p a {
 
 @media (min-width: 768px) {
     div.aims-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         gap: 3rem;
     }
     div.aims-img {
@@ -330,3 +335,5 @@ p a {
         max-width: 1140px;
     }
 }
+
+/*# sourceMappingURL=prefixed_styles.css.map */

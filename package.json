@@ -8,8 +8,10 @@
     "build": "npm-run-all clean parcel:build",
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
-    "clean": "rimraf dist .parcel-cache"
+    "clean": "rimraf dist .parcel-cache",
+    "prefix": "postcss ./src/css/styles.css --use=autoprefixer --output=./src/css/prefixed_styles.css"
   },
+  "browserslist": "last 4 versions",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/carlosbej2/gloryhammer-html-project.git"
@@ -24,7 +26,15 @@
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "parcel": "^2.12.0",
+    "postcss-cli": "^11.0.0",
     "posthtml-include": "^2.0.1",
     "rimraf": "^5.0.5"
+  },
+  "plugins": {
+    "autoprefixer": true
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss-modules": "^6.0.0"
   }
 }
