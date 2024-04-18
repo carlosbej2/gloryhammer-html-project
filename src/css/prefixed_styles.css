@@ -336,4 +336,32 @@ p a {
     }
 }
 
+@media (min-width: 320px) {
+    .home-logo {
+        width: 400px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .home-logo {
+        width: 550px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-logo {
+        width: 650px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-logo {
+        width: 750px;
+        height: 250px;
+    }
+}
+
 /*# sourceMappingURL=prefixed_styles.css.map */
