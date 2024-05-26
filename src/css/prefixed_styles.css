@@ -209,6 +209,14 @@ p a {
             clip-path: circle(45%);
 }
 
+.logo_g_img_infinite {
+    -webkit-animation: rotate 3s infinite;
+            animation: rotate 3s infinite;
+    margin: 0 10px;
+    -webkit-clip-path: circle(45%);
+            clip-path: circle(45%);
+}
+
 .svg_img {
     animation: rotate 3s reverse;
 }
