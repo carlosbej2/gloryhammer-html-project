@@ -25,3 +25,27 @@ function makeDivBlack(introText) {
 function makeDivNormal(introText) {
     introText.style.backgroundColor = 'transparent'; // Devuelve el fondo a su color original cuando el cursor se quita de encima
 }
+
+//Fuente: https://codepen.io/joshuacba08-the-encoder/pen/WNoNVOq
+//Fuente: https://stackoverflow.com/questions/72855185/javascript-typing-effect-function
+
+document.addEventListener("DOMContentLoaded", function() {
+    function typeWriterEffect(elementClass, speed = 120) {
+      const textElement = document.querySelector(`.${elementClass}`);
+      if (!textElement) return;
+  
+      const textContent = textElement.innerHTML;
+      textElement.innerHTML = "";
+  
+      let index = 0;
+      function typeWriter() {
+        if (index < textContent.length) {
+          textElement.innerHTML += textContent.charAt(index);
+          index++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      setTimeout(typeWriter, speed);
+    }
+    typeWriterEffect("animate-text", 120);
+});
