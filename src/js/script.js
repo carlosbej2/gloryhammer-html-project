@@ -7,16 +7,6 @@ function stopRotation(element) {
     element.style.transform = ''; // Reinicia la rotación
 }
 
-function startLogoAnimation(element) {
-    element.style.transition = 'transform 0.5s ease-in-out'; // Establece una transición suave para la animación
-    element.style.transform = 'scale(1.1)'; // Aplica un efecto de escala cuando el cursor está sobre la imagen
-}
-
-function stopLogoAnimation(element) {
-    element.style.transition = 'transform 0.5s ease-in-out'; // Establece una transición suave para la animación
-    element.style.transform = 'scale(1)'; // Devuelve la imagen a su tamaño original cuando el cursor se retira
-}
-
 function makeDivBlack(introText) {
     introText.style.backgroundColor = 'rgba(0, 0, 0, .5)'; //Oscurecer el fondo al pasar el cursor sobre él
     introText.style.borderRadius = '5%'; // Hace que el borde del texto sea redondeado
@@ -30,8 +20,10 @@ function makeDivNormal(introText) {
 //Fuente: https://stackoverflow.com/questions/72855185/javascript-typing-effect-function
 
 document.addEventListener("mouseenter", function() {
-    const elements = document.querySelectorAll('.rotate');
-    elements.forEach((element) => {
+    const rotate_elements = document.querySelectorAll('.rotate');
+    const disc_info_elements = document.querySelectorAll('.intro-text');
+    
+    rotate_elements.forEach((element) => {
         element.addEventListener('mouseover', () => {
             startRotation(element);
         });
@@ -39,6 +31,16 @@ document.addEventListener("mouseenter", function() {
             stopRotation(element);
         });
     });
+
+    disc_info_elements.forEach((element) => {
+        element.addEventListener('mouseover', () => {
+            makeDivBlack(element);
+        });
+        element.addEventListener('mouseleave', () => {
+            makeDivNormal(element);
+        });
+    });
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {
