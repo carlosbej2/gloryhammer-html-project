@@ -29,6 +29,18 @@ function makeDivNormal(introText) {
 //Fuente: https://codepen.io/joshuacba08-the-encoder/pen/WNoNVOq
 //Fuente: https://stackoverflow.com/questions/72855185/javascript-typing-effect-function
 
+document.addEventListener("mouseenter", function() {
+    const elements = document.querySelectorAll('.rotate');
+    elements.forEach((element) => {
+        element.addEventListener('mouseover', () => {
+            startRotation(element);
+        });
+        element.addEventListener('mouseleave', () => {
+            stopRotation(element);
+        });
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     function typeWriterEffect(elementClass, speed = 120) {
       const textElement = document.querySelector(`.${elementClass}`);
