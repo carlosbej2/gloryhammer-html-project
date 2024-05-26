@@ -294,7 +294,7 @@ p a {
 
 @media (max-width: 575px) {
     .band_pic {
-        width: 70%;
+        width: 40%;
         text-align: center;
     }
     .logo_g_img {
@@ -314,7 +314,7 @@ p a {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .band_pic {
-        width: 30%;
+        width: 60%;
         text-align: center;
     }
     .logo_g_img {
@@ -324,7 +324,7 @@ p a {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .band_pic {
-        width: 20%;
+        width: 80%;
         text-align: center;
     }
     .logo_g_img {
@@ -334,11 +334,8 @@ p a {
 
 @media (min-width: 1200px) {
     .band_pic {
-        width: 15%;
+        width: 100%;
         text-align: center;
-    }
-    .logo_g_img {
-        width: 15%;
     }
 }
 
