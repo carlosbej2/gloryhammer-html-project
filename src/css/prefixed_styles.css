@@ -48,13 +48,6 @@
     text-align: center;
 }
 
-.discography_introduction p {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
 body.home {
     background-image: url('../assets/img/gloryhammer_background.webp'); 
     background-repeat: no-repeat;
