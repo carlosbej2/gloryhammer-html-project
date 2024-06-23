@@ -63,3 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     typeWriterEffect("animate-text", 120);
 });
+
+document.querySelector('.video-container').addEventListener('click', function() {
+    this.innerHTML = '<iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/-O5TxWQkfr0?si=nHm8sRNYgBIfSsYh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+});
