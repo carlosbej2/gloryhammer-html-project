@@ -24,7 +24,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    cursor: url("../assets/img/hammer_cursor.png"), auto;
+    cursor: url("../assets/img/hammer_cursor.webp"), auto;
 }
 
 /** Página de inicio **/
@@ -49,7 +49,7 @@
 }
 
 body.home {
-    background-image: url('../assets/img/gloryhammer_background.png'); 
+    background-image: url('../assets/img/gloryhammer_background.webp'); 
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
